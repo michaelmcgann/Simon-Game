@@ -16,7 +16,7 @@ The game tests memory and concentration skills and provides a fun and engaging w
 4. Advance Through Levels: Each time you correctly replicate a sequence, you advance to the next level, where an additional colour is added to the sequence.
 5. Game Over: If you replicate the sequence incorrectly, the game ends. The game will display your final score (level reached) and instructions to restart.
 ## Restarting the Game
-- To restart the game after a game over, press the Enter key. This will reset the game back to Level 1.
+- To restart the game after a game over, press the Enter key or tap the screen. This will reset the game back to Level 1.
  ## Link
  https://michaelmcgann.github.io/Simon-Game/
 
