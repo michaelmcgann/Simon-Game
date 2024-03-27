@@ -91,7 +91,9 @@ function handleEnterKey(e) {
 function handleScreenTap() {
     document.removeEventListener(`touchstart`, handleScreenTap);
     resetGame();
-    initializeGame();
+    setTimeout(() => {
+        initializeGame();
+    }, 500);
 }
 
 function gameEnd() {
