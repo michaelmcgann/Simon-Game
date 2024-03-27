@@ -61,7 +61,7 @@ for (let button of buttonColours) {
     });
 }
 
-function resetGame(e) {
+function resetGame() {
     console.log(`resetting game..`);
     heading.innerHTML = `Press Enter Key or Tap to Start`;
     level = 1;
@@ -72,7 +72,6 @@ function resetGame(e) {
     });
     document.querySelector(`#level-title`).classList.remove(`game-over-title`);
     document.body.classList.remove(`game-over-bg`);
-    startGame(e);
 }
 
 function disableButtons() {
@@ -84,8 +83,15 @@ function disableButtons() {
 function handleEnterKey(e) {
     if (e.key.toLowerCase() === `enter`) {
         resetGame(e);
+        startGame(e);
         document.removeEventListener(`keydown`, handleEnterKey);
     }
+}
+
+function handleScreenTap() {
+    resetGame();
+    initializeGame();
+    document.removeEventListener(`touchstart`, handleScreenTap);
 }
 
 function gameEnd() {
@@ -94,6 +100,7 @@ function gameEnd() {
     document.querySelector(`#level-title`).classList.add(`game-over-title`);
     document.body.classList.add(`game-over-bg`);
     document.addEventListener(`keydown`, handleEnterKey);
+    document.addEventListener(`touchstart`, handleScreenTap);
 }
 
 function checkAnswer(button) {
@@ -134,7 +141,6 @@ function startGame(e) {
         initializeGame();
     }
 }
-
 
 document.querySelectorAll(`.btn`).forEach(button => {
     button.classList.add(`disabled`);
