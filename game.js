@@ -89,9 +89,9 @@ function handleEnterKey(e) {
 }
 
 function handleScreenTap() {
+    document.removeEventListener(`touchstart`, handleScreenTap);
     resetGame();
     initializeGame();
-    document.removeEventListener(`touchstart`, handleScreenTap);
 }
 
 function gameEnd() {
