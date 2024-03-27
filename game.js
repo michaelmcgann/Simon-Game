@@ -63,7 +63,7 @@ for (let button of buttonColours) {
 
 function resetGame(e) {
     console.log(`resetting game..`);
-    heading.innerHTML = `Press Enter Key to Start`;
+    heading.innerHTML = `Press Enter Key or Tap to Start`;
     level = 1;
     userClickedPattern = [];
     gamePattern = [];
@@ -89,7 +89,7 @@ function handleEnterKey(e) {
 }
 
 function gameEnd() {
-    heading.innerHTML = `Game Over. Your Score Was: ${level}. Press Enter To Restart.`;
+    heading.innerHTML = `Game Over. Your Score Was: ${level}. Press Enter or tap To Restart.`;
     disableButtons();
     document.querySelector(`#level-title`).classList.add(`game-over-title`);
     document.body.classList.add(`game-over-bg`);
