@@ -10,11 +10,11 @@ The game tests memory and concentration skills and provides a fun and engaging w
 - Sound Effects: Auditory feedback for each colour in the sequence, correct sequences, and incorrect attempts.
 - Game Over and Restart: When a player fails to replicate the sequence, the game ends, displaying the achieved level and offering a chance to restart.
 ## How to Play
-Start the Game: Press the Enter key oe tap the screen to begin. The game will immediately proceed to Level 1.
-Follow the Sequence: Pay attention to the sequence of colours highlighted by the game.
-Replicate the Sequence: Click the coloured buttons in the order they were highlighted.
-Advance Through Levels: Each time you correctly replicate a sequence, you advance to the next level, where an additional colour is added to the sequence.
-Game Over: If you replicate the sequence incorrectly, the game ends. The game will display your final score (level reached) and instructions to restart.
+1. Start the Game: Press the Enter key oe tap the screen to begin. The game will immediately proceed to Level 1.
+2. Follow the Sequence: Pay attention to the sequence of colours highlighted by the game.
+3. Replicate the Sequence: Click the coloured buttons in the order they were highlighted.
+4. Advance Through Levels: Each time you correctly replicate a sequence, you advance to the next level, where an additional colour is added to the sequence.
+5. Game Over: If you replicate the sequence incorrectly, the game ends. The game will display your final score (level reached) and instructions to restart.
 ## Restarting the Game
 - To restart the game after a game over, press the Enter key. This will reset the game back to Level 1.
  ## Link
