@@ -1,4 +1,4 @@
-# Pattern Matching Game
+# Pattern Matching Game (Simon)
 ## Overview
 This Pattern Matching Game challenges players to remember and replicate a sequence of colours that progressively gets longer and more complex with each level. 
 Each round, a new colour is added to the sequence, and the player must reproduce the sequence by clicking the coloured buttons in the correct order. 
