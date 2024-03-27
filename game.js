@@ -119,14 +119,19 @@ function checkAnswer(button) {
 
 }
 
+function initializeGame() {
+    document.querySelectorAll(`.btn`).forEach(button => {
+        button.classList.remove(`disabled`);
+    });
+    document.removeEventListener(`keydown`, startGame);
+    document.removeEventListener(`touchstart`, initializeGame);
+    nextSequence();
+}
+
 function startGame(e) {
 
     if (e.key.toLowerCase() === `enter`) {
-        document.querySelectorAll(`.btn`).forEach(button => {
-            button.classList.remove(`disabled`);
-        });
-        document.removeEventListener(`keydown`, startGame);
-        nextSequence();
+        initializeGame();
     }
 }
 
@@ -135,4 +140,5 @@ document.querySelectorAll(`.btn`).forEach(button => {
     button.classList.add(`disabled`);
 });
 document.addEventListener(`keydown`, startGame);
+document.addEventListener(`touchstart`, initializeGame);
 
